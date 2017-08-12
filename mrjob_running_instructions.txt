@@ -1,0 +1,9 @@
+this will run mrjob locally (in anaconda command line)
+
+on local
+python C:\Temp\mrjob_test1.py C:\Temp\test.txt C:\Temp\test2.txt
+
+on emr
+python C:\Temp\mrjob_test1.py -r emr C:\Temp\test.txt C:\Temp\test2.txt --conf-path C:\Temp\mrjob.conf --output-dir=s3://ren-bucket/output/ --no-output 
+
+python C:\Temp\mrjob_test1.py -r emr s3://ren-bucket/input/ --conf-path C:\Temp\mrjob.conf --output-dir=s3://ren-bucket/output/ --no-output 
